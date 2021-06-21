@@ -1,0 +1,32 @@
+#tituloTarjeta{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+#fondobody{
+    height: 500px;
+    width: 500px;
+    background-color: #EAC926; 
+    font-family: "roboto";
+ 
+}
+h2.titulares{    
+    font-size: 24px;
+}
+p{
+    font-size: 12px;
+}
+p.precio{
+    font-size: 18px;
+
+}
+p.desc{
+    font-size: 16px;
+
+}
+#search{
+    width: 200px;
+}
+
+nav{
+    font-style: normal;
+}
