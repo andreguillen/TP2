@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Trabajo integrador individual</title>
     <link rel="stylesheet" href="../public/CSS/style.css" /> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel= "stylesheet"href="../public/CSS/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body id=fondobody>
-    <header>
-      <img src= "../images/logo-mercado-liebre.svg" style="width:300px;height:200px;"> 
+<body >
+    
+    <header id=fondoheader>
+      <img src= "../images/logo-mercado-liebre.svg"> 
       <h3 id="tituloTarjeta">Comprá en cuotas y sin tarjetas de crédito</h3> 
       <form autocomplete="on" id="search">
       
         <input id="search" type="text" placeholder="Buscar por productos, Marcas">
         <button>
-        <img src="../images/search-solid.svg" style="width:20px;height:20px;">
+        <img src="../public/images/search-solid.svg" style="width:20px;height:20px;">
         </button>
       </form><br>
       <nav>
@@ -31,42 +35,57 @@
       </nav>   
     </header>
     <main>
+        <!-- Esto es VISITAS -->
         <section><h2 class=titulares>Basado en tu última visita</h2>
             <div>
-                <img src="../images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" style="width:200px;height:200px;">
+                <img src="../images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
+            </div>
+            <div>
                     <p class="precio">Precio de producto</p>
                     <P>Porcentaje</P>
                     <p>Nombre de producto</p>
             </div>
+            
             <div>
                 <img src="../images/img-macbook-pro-2019.jpg" alt="Mac-Book">
+            </div>
+            <div>
                     <p class="precio">Precio de producto</p>
                     <P class="desc">Porcentaje</P>
                     <p class="desc">Nombre de producto</p>
             </div>
             <div>
                  <img src="../images/img-samsung-galaxy-s10.jpg" alt="Celular-Samsung">
+            </div>
+            <div>
                     <p class="precio">Precio de producto</p>
                     <P class="desc">Porcentaje</P>
                     <p class="desc">Nombre de producto</p>
             </div>
         </section>
         <br>
-        <section><h2>Sección de ofertas</h2>          
+        <!-- Esto es OFERTAS -->
+        <section><h2 class=titulares>Sección de ofertas</h2>          
             <div>
                 <img src="../images/img-tv-samsung-smart.jpg" alt="Stickman">
+            </div>
+            <div>
                     <p class="precio">Precio de producto</p>
                     <P class="desc">Porcentaje</P>
                     <p class="desc">Nombre de producto</p>
             </div>
             <div>
                 <img src="../images/img-cafetera-moulinex.jpg" alt="Stickman">
+            </div>
+            <div>
                     <p class="precio">Precio de producto</p>
                     <P class="desc"> Porcentaje</P>
                     <p class="desc">Nombre de producto</p>
             </div>
             <div>
                 <img src="../images/img-samsung-galaxy-s10.jpg" alt="Stickman">
+            </div>
+            <div>    
                     <p class="precio">Precio de producto</p>
                     <P class="desc">Porcentaje</P>
                     <p class="desc">Nombre de producto</p>
@@ -75,13 +94,16 @@
 
     </main> 
 
-    <footer>
-        <h2>Pagá con tarjeta o efectivo</h2>       
-        <h4>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</h4>
-        <h2>Seguridad de principio a fin</h2>
-        <h4>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</h4>
-        <h2>Envío gratis desde $2500</h2>
-        <h4>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</h4>
+    <footer id=fondofooter>
+        <i class="far fa-credit-card fa-2em"></i> 
+        <h2 class=titulares>Pagá con tarjeta o efectivo</h2>           
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!<p>
+        <i class="fas fa-user-shield"></i>
+        <h2 class=titulares>Seguridad de principio a fin</h2>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.<p>
+        <i class="fas fa-gift"></i>
+        <h2 class=titulares>Envío gratis desde $2500</h2>
+        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.<p>
         <h5>Copyright © 1999-2020 MercadoLiebre S.R.L.<h5>
     </footer>
     
