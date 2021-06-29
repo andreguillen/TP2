@@ -13,10 +13,30 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body >
-    
-    <header id=fondoheader>
-      <img src= "../images/logo-mercado-liebre.svg"> 
-      <h3 id="tituloTarjeta">Comprá en cuotas y sin tarjetas de crédito</h3> 
+    <header class="main-header">
+        <div class="main-header-top">
+            <img src= "../images/logo-mercado-liebre.svg" class="logo">
+            <h2 class="tituloTarjeta">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjetas de crédito
+            </h2> 
+        </div>
+       
+        <nav class="main-header-bottom">
+            <ul class="izquierda-nav">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="derecha-nav">
+                <li><a href="#">Creá tu cuenta</a></li>
+                <li><a href="#">Ingresá</a></li>
+                <li><a href="#">Mis Compras</a></li>
+            </ul>  
+        </nav>    
+     
+      
       <form autocomplete="on" id="search">
       
         <input id="search" type="text" placeholder="Buscar por productos, Marcas">
@@ -25,13 +45,7 @@
         </button>
       </form><br>
       <nav>
-        <a href="/html/">Ofertas</a><br>
-        <a href="/css/">Tiendas Oficiales</a><br>
-        <a href="/js/">Vender</a><br>
-        <a href="/python/">Ayuda</a><br><br><br>
-        <a href="/html/">Crea tu cuenta</a><br>      
-        <a href="/html/">Ingresa</a><br>        
-        <a href="/html/">Mis compras</a><br>        
+          
       </nav>   
     </header>
     <main>

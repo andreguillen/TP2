@@ -14,18 +14,20 @@ header {
     border: 1px solid black;
 }
 
-#tituloTarjeta{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
-}
-#fondoheader{
-    height: 500px;
-    width: 500px;
+.tituloTarjeta{
+    font-weight: 400;
+    text-align: center;
+   
+.main-header{  
+
     background-color: #EAC926; 
-    font-family: "roboto";
+    padding: 20px; 
  
 }
+ .logo{
+     width: 200px;
+ }
+
 #fondofooter{
     background-color: white;
 

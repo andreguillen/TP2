@@ -8,6 +8,7 @@ app.get('/mundo', (req,res) =>{
 });
 
 app.use(express.static(path.join(dirname, './public')));
+//app.use(express.static(path.join(dirname, './views'))); en algun momento voy a necesitar poner publica esta carpeta 
 
 app.listen(3000, () => {
     console.log("Servidor corriendo");
