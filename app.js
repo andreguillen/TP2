@@ -1,10 +1,12 @@
+const PORT = process.env.PORT || 3000;
+
 const express = require('express');
 const path = require('path');
 
 const app = express();
 
-app.listen(3000, () => { 
-   console.log ("Servidor corriendo en puerto 3000");
+app.listen(PORT, () => { 
+   console.log ("Servidor corriendo en puerto "+PORT);
 });
 
 app.use(express.static(path.join(__dirname, '/public')));
