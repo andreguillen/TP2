@@ -6,6 +6,7 @@
 
 body {
     font-family: "Roboto";
+   
 }
 
 .main-header {
@@ -135,6 +136,7 @@ body {
         object-position: 50% 50%;
         height: 15vh;
         width: 100%;
+        
     }
    
        
@@ -160,7 +162,9 @@ p.titulos-principales{
 
 .card{
     margin-bottom: 5px;
-    border: solid 3px black;
+    /* border: solid 3px black; */
+    box-shadow: 0 0 10px 3px #bdbfca44;
+    
 }
 
 .card-body{
@@ -301,6 +305,7 @@ ul.izquierda-nav{
 	align-items: flex-start;
 	align-content: space-around;
     margin-right: 25px;
+    color: "green";
    
  
 }
