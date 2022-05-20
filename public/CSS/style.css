@@ -5,105 +5,141 @@
 }
 
 body {
-    font-family: "Roboto";
+    font-family: "Roboto";  
+    background-color: #fff159; 
+    width: 100%; 
+}
+
+.main-menu{
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0; 
+    transition: transform 0.3s;;
+    transform: translateY(-100%); /* esto hace que el menu se muestre o no*/
    
 }
 
-.main-header {
-   background-color: #EAC926; 
-   padding: 20px;
-  
-   display:flex;
-   margin:auto;
-   display: block;
-	
-	
-	
-}
-
-.tituloTarjeta{
-    font-size: 12px;
-    font-weight: bold;
-    text-align: left;   
-    padding: 0px;
- 
+img{
+    max-width: 100%;
 }
 
 .logo{
-     width: 200px;
-     margin-bottom: 8px;
-}
-.search {
-    width: 45%; 
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-}
-
-.search input{
-    width: 100%;
-    height: 32px;
-    border-radius: 10px;        
-    text-indent: 32px;     
-}
-
-.search span {
-    position: absolute;
-  }
-
- 
-.hamburguer-button{
-     background-color: #03264C;     
-     display:block;
-     max-width: 50px;
-     max-height: 50px;   
-     
-     border-radius: 8px;
-     text-align:center;
-    
-     font-size: 16px;
-     margin:auto;
-    
- }
-
- 
-.main-navbar{
-    display:none;
-}
-
-.main-navbar ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-.main-navbar a{
-    text-decoration: none;
-    color: #222222;
-    display: inline-block;
-    padding: 5px 0;
-    font-size: 17px;
-}
-
-.element-footer {
-    text-align: center;
-    padding: 25px;
-}
-
-.far {
-    font-size: 2em;
+    width:120px;
+    padding: 10px 10px 10px 10px; 
     margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+.main-header {
+    display: flex;
+    width: 100vw;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* justify-content: space-around; */
+	
+    align-content: flex-start;
+   
+}  
+
+.search-bar {
+ 
     padding: 10px;
+    text-align: left;
+    border: none;
+    border-radius: 1px;   
+}
+
+input{
     
+    background-color: white;
+    height: 35px;
+    border-radius: 2px;        
+    text-indent: 32px; 
+    width: 380px; 
+    margin-top: 3px;
+}
+.button-bar-search{
+    display:flex;
+    position:absolute;
+    color:#bebcbc;
+    font-size:12px;
+    background-color: white;
+    transform: translateY(-30px);
+    border: none;  
+    margin-left: 8px; 
+    margin-top: 10px;
 }
 
-.fas{
-    font-size: 2em;
-    margin-bottom: 10px;
-    padding: 10px;  
+.toggle-menu{
+    
+    position:absolute; 
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0.6rem;
+    right: 5.5rem;
+    cursor: pointer;
+    filter: invert(1);/*hace que los iconos negros se pongan blancos*/
+    z-index: 1; /*logra que el icono quede arriba del menu*/
+}
+
+.main-menu{
+    display: none; 
+  
+}
+
+.main-menu--show{
+    transform: translateY(0);/* aqui el menu se va mostrar mediante el script js*/ 
+    display:block;
+    text-align: left;
+    background-color: white;     
+    width: 100vw;
+    /* border: 15px solid green; */
+    padding: 5px;
+    margin: 0;
+     
+}
+.izquierda-nav{
+    border-bottom: 1px solid rgb(226, 224, 224) ;
+    margin: 0;
+}
+
+
+ .main-menu__item{
+    padding: 1em; 
+    list-style-type: none; 
  
-   /* text-align: left;*/
+   
+    
+} 
+
+.main-menu__link{
+    color: rgb(135, 134, 134);
+    text-transform: capitalize;
+    text-decoration: none; 
+      
 }
 
+
+@media screen and (min-width: 768px){
+    .main-menu{
+        flex-direction: row;
+        
+    } 
+
+    .toggle-menu{
+        display:none;
+    }
+}
+/* 
+.izquierda-nav{
+    border-bottom: 2px solid #bebcbc;
+    list-style: none;
+}
+.derecha-nav{
+    border-bottom: 2px solid #bebcbc;
+    list-style: none;
+} */
 .circulo {
     width: 40px;
     height: 40px;    
@@ -152,7 +188,7 @@ p.titulos-principales{
 .card-container{
     display:block;
     margin:auto;
-    border-top: 3 solid black;
+    /* border-top: 3 solid black; */
     margin: 15px;   
     border-radius: 8px;
     margin-top: 15px;
@@ -195,7 +231,7 @@ p.titulos-principales{
     text-align: center;
     font-size: 11px;
 }
-  /*@media only screen and (min-width: 576px) { /*desde este ancho hacia arriba - phone
+ /*  /*@media only screen and (min-width: 576px) { /*desde este ancho hacia arriba - phone
      For mobile phones: 
   body {
     border: 1px solid black;
@@ -203,11 +239,10 @@ p.titulos-principales{
 }*/
 
 
-@media only screen and (min-width: 768px) {/*desde este ancho hacia arriba - tablet*/
-
+/* 
 .main-header {
 
-        background-color: #EAC926; 
+        background-color: #fff159; 
         padding: 20px;  
        
         margin:auto;
@@ -215,7 +250,7 @@ p.titulos-principales{
         
 }
 
-.main-header-top{
+.main-logo-top{
        display: flex;
        justify-content: space-between;
   
@@ -248,45 +283,13 @@ p.titulos-principales{
 .search input{
     width: 100%;
     height: 32px;
-    border-radius: 10px;        
+    border-radius: 5px;        
     text-indent: 32px;     
 }
 
 .search span {
     position: absolute;
   }
-
-/*****/
-/*#search form{
-    width: 250px;    
-    padding: 1px;
-    border-radius: 10px;
-    
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: space-between;
-   
-  
-   
-}
-
-#search-input{
-    width: 200px;
-    padding: 8px;
-    border-radius: 5px;
-    border: solid 2px #ebebeb;
-
-   
-}
-*/
-
-.hamburguer-button{
-    display: none;
-}
-
 nav.main-navbar{
     display:flex;
     flex-direction: row;
@@ -295,8 +298,8 @@ nav.main-navbar{
     justify-content: space-between;
     padding-top: 15px;
 }
-
-ul.izquierda-nav{
+ */ 
+/* ul.izquierda-nav{
  
     display: flex;
 	flex-direction: row;
@@ -326,7 +329,7 @@ ul.derecha-nav {
     position:relative;
     margin-top: 5px;
     margin-bottom: 5px;
-}
+}  */
 
 .card-container{
     display: flex;  
@@ -334,7 +337,7 @@ ul.derecha-nav {
     padding: 10px;
     margin-left: 50px;
     margin-top: 20px;
-    border-top: 3 solid #ebebeb;
+    
     
     border-radius: 8px;
    	flex-direction: row;
@@ -370,12 +373,9 @@ p.titulos-principales{
 
 
  
-}
-
- 
 @media only screen and (min-width: 1200px) {
 
-    .logo{
+   /*  .logo{
         width: 250px;
         
     }
@@ -450,7 +450,7 @@ p.titulos-principales{
         position: absolute;
       }
 
-
+ */
     .card-container{
         display: flex;
         flex-wrap: wrap;

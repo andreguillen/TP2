@@ -17,10 +17,10 @@ app.get('/', (req,res) =>{
 
 });
 
+app.get('/ofertas', (req,res) =>{      
+  res.sendFile(path.resolve(__dirname, './views/ofertas.html')); 
 
-
-
-
+});
 
 //app.use(express.static(path.join(dirname, './views'))); en algun momento voy a necesitar poner publica esta carpeta 
 

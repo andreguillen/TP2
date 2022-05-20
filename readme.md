@@ -9,4 +9,3 @@ It is programmed in HTML, Css and javascript.
 
 ## Preview
 ![Sample list](/public/img/TP2.png "Sample list")
-gitgit status
