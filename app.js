@@ -1,4 +1,4 @@
-// const PORT = process.env.PORT || 3000;
+ const PORT = process.env.PORT || 3000;
 
 const express = require('express');
 // const { stat } = require('fs/promises');
@@ -16,15 +16,15 @@ const staticOptions = {
    setHeaders: setHeadersOnStatic
 }
 
-/* app.listen(PORT, () => { 
+ app.listen(PORT, () => { 
    console.log ("Servidor corriendo en puerto "+PORT);
-}); */
+});
 
 app.use(express.static(path.join(__dirname, '/public'), staticOptions ));
 
-app.listen(3000, ()=>{
+/*app.listen(3000, ()=>{
    console.log('App listening .');
-});
+});*/
 
 app.get('/', (req,res) =>{   
     //res.send("Hola Mundo");  // Permite enviar texto o codigo HTML
