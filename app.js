@@ -37,6 +37,11 @@ app.get('/ofertas', (req,res) =>{
 
 });
 
+app.get('/crear-cuenta', (req,res) =>{      
+   res.sendFile(path.resolve(__dirname, './views/crear-cuenta.html')); 
+ 
+ });
+
 
 
 

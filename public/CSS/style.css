@@ -7,7 +7,7 @@
 body {
     font-family: "Roboto";  
     background-color: #fff159; 
-    width: 100%; 
+    width: 100vw; 
 }
 
 .main-menu{
@@ -28,27 +28,23 @@ img{
     width:120px;
     padding: 10px 10px 10px 10px; 
     margin-bottom: 10px;
-    margin-top: 5px;
-    
+    margin-top: 5px;   
 }
-
 .main-header {
     display: flex;
     position: relative;
     width: 100vw;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: flex-start;
-   
+	align-content: flex-start;  
 } 
 
 .search{
-    /* display: flex; */
     width: 50vw;
     position: relative;
     margin: 15px 15px;
-
 }
+
 .search-bar{
     width: 50vw;
     position: relative;
@@ -101,7 +97,6 @@ i.fas.fa-search{
     text-align: left;
     background-color: white;     
     width: 100vw;
-    /* border: 15px solid green; */
     padding: 5px;
     margin: 0;
 }
@@ -123,7 +118,99 @@ i.fas.fa-search{
     text-decoration: none; 
 }
 
+/*CARDS*/
 
+.container-main{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+    width: 100vw;
+    background-color:#ebebeb; 
+    margin:auto;
+
+}
+
+.banner-img{
+        object-fit: cover;
+        object-position: 50% 50%;
+        height: 30vh;
+        width: 100vw;
+} 
+
+p.titulos-principales{
+    text-align: left;
+    font-size: 1.5em;
+    padding: 0.2em 2em;
+    margin: 5px auto 0 0.7em;
+    font-weight: bold;
+}
+
+.card-container{
+    display: flex;  
+  /*   margin-left: 2.5vw;
+    margin-right: 2.5vw; */
+    margin: 1em 2.8em;
+    border-radius: 8px;
+   	flex-direction: row;	
+    flex-wrap: wrap;
+    justify-content: center;     
+    width: 90vw;
+}
+
+
+.card{
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-bottom: 5vh;
+    box-shadow: 0 0 10px 3px #bdbfca44; 
+    width: 40vw; 
+}
+
+
+.card-body{
+    border-top: solid 1px #ebebeb; 
+    margin-bottom: 8px ;   
+}
+
+.card-text{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-desc{
+    font-size: 18px;
+    font-weight: bold;
+    color: #39b54a; 
+}
+
+.circulo {
+    width: 30px;
+    height: 30px;    
+    border-radius: 50%;
+    border: solid 2px  #5cb85c;
+    font-size: 1em;
+    padding: 0.4em;
+    margin-left: 75%;
+    display: flex;
+    justify-content: center; 
+}
+
+.card h5{
+    display: none;   
+}
+
+.card:hover h5{
+    display: block;   
+}
+
+.card-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
+
+/*FOOTER*/
 
 .elementos-del-footer{
     display: flex;
@@ -193,81 +280,174 @@ p{
     padding: 1em;
     border-top:  1px solid rgb(226, 224, 224);
 }
+/*****estilos formulario creacion de cuenta*****/
+.formulario-registro{
+    width: 400px;
+    background: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    font-family: "roboto";
+    color: black;
+    box-shadow: 7px 10px 10px rgb(168, 167, 167);
+}
+
+.formulario-registro h4{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.form-control{
+   margin-bottom: 10px;
+  
+  
+}
+
+.control{
+    width: 100%;
+   
+    background: #ebebeb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(54, 54, 54);
+    font-family: "roboto";
+    font-size: 1em;
+    color: rgb(54, 54, 54);;
+}
+.formulario-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 1em;
+    color: rgb(54, 54, 54);
+    line-height: 30px;
+}
+.formulario-registro a{
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+.formulario-registro a:hover{
+    color: rgb(54, 54, 54);
+    text-decoration: underline;
+}
+.formulario-registro .boton{
+    width: 100%;
+    line-height: 20px;
+    background: rgb(99, 6, 238);
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    color: white;
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+/*validacion*/
+
+.form-control input{
+    margin-bottom: 0.2em;
+    position: relative;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+
+}
+
+.form-control i {
+	visibility: hidden;
+    position:absolute;
+    margin-left: -22px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+    margin-top: -30px;
+    margin-left:290px;
+   
+   
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+    margin-top: 15px;
+    margin-right: 15px;
+    
+  
+}
+
+.form-control small {
+	color: #e74c3c;
+    font-size: 1em;
+	visibility: hidden;
+  
+}
+
+.form-control.error small {
+	visibility: visible;
+    display: flex;
+    justify-content: flex-start;
+
+}
 
 
+
+
+/**********************VERSION TABLET***************************/
 
 @media screen and (min-width: 768px){
-    .main-menu{
-        flex-direction: row;
-        
-    } 
 
-    .toggle-menu{
-        display:none;
-    }
-}
-
-.circulo {
-    width: 40px;
-    height: 40px;    
-    border-radius: 50%;
-    border: solid 2px  #5cb85c;
-    font-size: 1.3em;
-    padding: 0.4em;
-    margin-left: 85%;
-    display: flex;
-    justify-content: center; 
-}
 
 .container-main{
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: flex-start;
-    width: 100%;
+	justify-content: center;
+    width: 100vw;
     background-color:#ebebeb; 
-    
-    display:flex;
     margin:auto;
-
 }
 
 .banner-img{
-        object-fit: cover;
-        object-position: 50% 50%;
-        height: 15vh;
-        width: 100%;
-        
-    }
-   
-       
-
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 30vh;
+    width: 100vw;
+} 
 
 p.titulos-principales{
     text-align: left;
-    font-size: 24px;
-    margin: 15px;
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 5px auto 0 0.8em;
     font-weight: bold;
 }
 
 .card-container{
-    
-    margin:auto;
-    /* border-top: 3 solid black; */
-    margin: 15px;   
-    border-radius: 8px;
-    margin-top: 15px;
-    
-   
-}
-
+        display: flex;  
+        margin: 1em 0em;
+        border-radius: 8px;
+           flex-direction: row;	
+        flex-wrap: wrap;
+        justify-content: center;     
+        width: 100vw;
+    }
 .card{
-    margin-bottom: 5px;
-    position: relative;
-    /* border: solid 3px black; */
-    box-shadow: 0 0 10px 3px #bdbfca44;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-bottom: 5vh;
+    box-shadow: 0 0 10px 3px #bdbfca44; 
+    width: 40vw;  
+    }
     
-}
 
 .card-body{
     border-top: solid 1px #ebebeb; 
@@ -286,6 +466,19 @@ p.titulos-principales{
     color: #39b54a; 
 }
 
+
+.circulo {
+    width: 30px;
+    height: 30px;    
+    border-radius: 50%;
+    border: solid 2px  #5cb85c;
+    font-size: 1em;
+    padding: 0.4em;
+    margin-left: 75%;
+    display: flex;
+    justify-content: center; 
+}
+
 .card-title{
     font-size: 24px;
     font-weight: bold;
@@ -293,233 +486,126 @@ p.titulos-principales{
 
 }
 
+
 .copy-right{
     text-align: center;
-    font-size: 11px;
-}
- /*  /*@media only screen and (min-width: 576px) { /*desde este ancho hacia arriba - phone
-     For mobile phones: 
-  body {
-    border: 1px solid black;
-    background-color: teal;
-}*/
-
-
-/* 
-.main-header {
-
-        background-color: #fff159; 
-        padding: 20px;  
-       
-        margin:auto;
-        display: block;
-        
-}
-
-.main-logo-top{
-       display: flex;
-       justify-content: space-between;
-  
-     
-	flex-direction: row;
-	flex-wrap: nowrap;
-	
-	align-items: baseline;
-	align-content: space-between;
-}
-
-.tituloTarjeta{
-    
-    text-align: right;
-}
-
-.logo{
-    width: 150px;
-    
-}
-
-
-.search {
-
-    width: 30%; 
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-}
-
-.search input{
-    width: 100%;
-    height: 32px;
-    border-radius: 5px;        
-    text-indent: 32px;     
-}
-
-.search span {
-    position: absolute;
-  }
-nav.main-navbar{
-    display:flex;
-    flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-    justify-content: space-between;
-    padding-top: 15px;
-}
- */ 
-/* ul.izquierda-nav{
- 
+    background-color: white;
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: space-around;
-    margin-right: 25px;
-    color: "green";
-   
- 
+    flex-direction: column;
+    flex-basis: auto;
+    width: 100vw;
+    padding: 1em;
+    border-top:  1px solid rgb(226, 224, 224);
 }
 
-.izquierda-nav li {
-    margin-right: 15px;
 }
 
+/**********************VERSION ESCRITORIO***************************/
 
-ul.derecha-nav {
-    
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: space-around;
-    position:relative;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}  */
-
-.card-container{
-    display: flex;  
-    margin-top: 15px;
-    padding: 10px;
-    margin-left: 50px;
-    margin-top: 20px;
-    
-    
-    border-radius: 8px;
-   	flex-direction: row;
-	flex-wrap: wrap;
-	
-	
-	align-content:flex-end;	
-}
-
-.card{
-   
-    width: 45%;
-    margin: 5px;
-    text-align: center; 
-    border-radius: 8px;   
-}
-
-.banner-img{
-    object-fit: cover;
-    object-position: 50% 50%;
-    height: 29vh;
-    width: 100%;
-}
-
-p.titulos-principales{
-    text-align: left;
-    font-size: 24px;
-    margin-left: 50px;
-    margin-top: 20px;    
-    font-weight: bold;
-}
-
-
-
- 
 @media only screen and (min-width: 1200px) {
 
-   /*  .logo{
-        width: 250px;
-        
+    .main-header {
+        display: flex;
+        position: relative;
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;  
+    } 
+
+
+    .search{
+        width: 80vw;
+        background-color: white;
+        border-radius: 6px;
+    }
+    .button-bar-search{
+        position: absolute;
+        left: 98%;
+        color: rgb(67, 66, 66);
+        border: none;
+        top: 8px;
+        font-size: 1.2em;
+        background-color:#fff;
+        height: 1.2em;
+    }
+    
+    i.fas.fa-search{
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        color: #666;
+        font-size: 0.8em;
+        margin: 3px -15px;
     }
 
-    .main-header{
-        margin:auto;
-        max-width: 100%;
-        display:block;      
+    #toggle-menu{
+        display:none;
     }
 
-    .main-header-top, .main-navbar{
+    .logo{
+        width:140px;
+        padding: 10px 10px 10px 10px; 
+        margin-bottom: 10px;
+        margin-top: 5px;   
+    }
+   
+    .main-menu{
+        transform: translateY(0);/* aqui el menu se va mostrar mediante el script js*/ 
+        display:flex;
+        flex-direction: row;
 
+        font-size: 1em;    
+        width: 100vw;
+        height: 8vh;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .izquierda-nav{
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 0;
+        margin-right: 0;
+        margin-left: -2.5em;
+    }
+
+
+
+    .derecha-nav{
+    
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+    }
+
+    .main-menu__item{
+        padding: 1em; 
+        list-style-type: none; 
+    } 
+    .main-menu__link{
+        color: rgb(9, 9, 9);
+        text-transform: capitalize;
+        text-decoration: none; 
+    }
+
+    .banner-img{
+        object-fit: cover;
+        object-position: 50% 50%;
+        height: 30vh;
+        width: 100vw;
+    } 
+    
+
+  
+
+  
+    .card-container{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
-
-        max-width: 1200px;
-        margin: auto;
-    }
-    .main-header-top{
-        max-width: 85%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: flex-start;
-       
-      
-        margin:auto;
-       
-      
-    }
-
-    .main-navbar{
-        max-width: 85%;
-    }
-
-    .main-navbar li{
-        margin: 0 10px;
-    }
-
-    .main-navbar a {
-        font-size: 19px;
-    
-    }
-
-    .tituloTarjeta{
-        
-        max-width: none;
-        font-size: 22px;
-        font-weight: 400;
-      
-    }
-
-    .search {
-
-        width: 30%; 
-        color: rgb(0, 0, 0);
-        font-size: 16px;
-    }
-
-    .search input{
-        width: 100%;
-        height: 32px;
-        border-radius: 10px;        
-        text-indent: 32px;     
-    }
-
-    .search span {
-        position: absolute;
-      }
-
- */
-    .card-container{
-        display: flex;
-        flex-wrap: wrap;
         align-items: center;
         align-content: flex-start;
         justify-content: center;
@@ -533,35 +619,35 @@ p.titulos-principales{
         width: 20%;
         
     }
-    .circulo{
-        margin-left: 75%;
-        font-size: 11px;
-        display: flex;
-  justify-content: center;
- 
-        
-    }
-
-
+   
+.circulo {
+    width: 30px;
+    height: 30px;    
+    border-radius: 50%;
+    border: solid 2px  #5cb85c;
+    font-size: 1em;
+    padding: 0.4em;
+    margin-left: 85%;
+    display: flex;
+    justify-content: center; 
+}
     .card h5{
-        display: none;
-        
+        display: none;   
     }
 
     .card:hover h5{
-        display: block;
-        
+        display: block;   
     }
 
 
 
-    p.titulos-principales{
-        text-align: left;
-        font-size: 24px;
-        margin-left: 170px;
-        margin-top: 20px;    
-        font-weight: bold;
-    }
+
+p.titulos-principales{
+    text-align: left;
+    font-size: 1.5em;
+    margin: 5px auto 0 6.3em;
+    font-weight: bold;
+}
 
 
     .elementos-del-footer{
@@ -576,14 +662,10 @@ p.titulos-principales{
         margin: auto;
 
     }
-
-
 }
 
 
 
 
- /* @media only screen and (min-width: 1100px) { desde este ancho hacia arriba - laptops
-    body {
-        border: 1px solid black;
-        background-color: blue;*/
+
+

@@ -13,68 +13,78 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel= "stylesheet"href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel= "stylesheet" href="css/normalize.css" type="text/css">
+    <link rel= "stylesheet" href="css/style.css" type="text/css"/> 
+    <link rel= "stylesheet" href="CSS/normalize.css" type="text/css">
+    <link rel= "stylesheet" href="CSS/style.css" type="text/css"/> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <header class="main-header">
-        <div class="main-header-top">
-            <div>
+    <header>
+
+      <div class="main-header">
+        <!-- LOGO-->
+        <div class="main-logo-top">
+            <a href="/">
             <img src= "./img/logo-mercado-liebre.svg" class="logo">
-            </div>
-            
-            
-            
-                
-                  <div class= "search">        
-                    <form autocomplete="on" method="POST">
-                    <span class="fas fa-search fa-lg"></span>
-                    <input placeholder="Buscar productos, marcas"  />
-                    </form>
-                  </div>
-            
-            
-            
-            <div>
-            <h2 class="tituloTarjeta">
-                <i class="fas fa-hand-holding-usd" style="color: black"></i>
-                Comprá en cuotas y sin tarjetas de crédito
-            </h2> 
-            </div>  
-
+            </a>
         </div>
+      <!-- input search-->
+     
+      <form class="search-form" autocomplete="on" method="get">
+        <div class="search">        
+          <input class="search-bar" type="search" placeholder="Buscar productos, marcas"/>
+          <button class="button-bar-search" type="submit">
+            <i class="fas fa-search"></i> 
+          </button>            
+        </div>  
+      </form>  
+           
+      <!-- Menu -->
+      <div>                 
+        
+            <div id="toggle-menu" class="toggle-menu">
+              <img src="/img/icons8-menu-squared-50.png" alt=""/>
+            </div>
+            <div id="main-menu" class="main-menu">
+                <ul class="izquierda-nav">
+                <li class="main-menu__item">
+                  <a href="ofertas" class="main-menu__link">Ofertas</a></li>
+                <li class="main-menu__item">
+                  <a href="#" class="main-menu__link">Tiendas Oficiales</a></li>
+                <li class="main-menu__item">
+                  <a href="#" class="main-menu__link">Vender</a></li>
+                <li class="main-menu__item">
+                  <a href="#" class="main-menu__link">Ayuda</a></li>
+                </ul>
 
-        <a href="#" class="hamburguer-button">
-            <i class="fas fa-bars" style="color: white"></i>
-        </a>
-
-       
-        <nav class="main-navbar">
-            <ul class="izquierda-nav">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <!-- <li style="font-size:120px"> &#128525</li> -->
-            </ul>
-
-            <ul class="derecha-nav">
-                <li><a href="#">Creá tu cuenta<i class="far fa-address-card" style="color:black"></i></a></li>
-                <li><a href="#">Ingresá<i class="fas fa-sign-in-alt" style="color:black" ></i></a></li>
-                <li><a href="#">Mis Compras<i class="fas fa-shopping-basket" style="color:black"></i></a></li>
-            </ul>  
-        </nav>      
-
+                <ul id="main-menu" class="derecha-nav">
+                <li class="main-menu__item">
+                  <i class="far fa-address-card" style="color:black"></i>
+                  <a href="#" class="main-menu__link">Creá tu cuenta</a></li>
+                <li class="main-menu__item">
+                  <i class="fas fa-sign-in-alt" style="color:black" ></i>
+                  <a href="#" class="main-menu__link">Ingresá</a></li>
+                <li class="main-menu__item">
+                  <i class="fas fa-shopping-basket" style="color:black"></i>
+                  <a href="#" class="main-menu__link">Mis Compras</a></li>
+                </ul> 
+            </div> 
+        
+      </div> 
+      <!-- fin Menu hamburguesa-->     
+     </div> 
     </header>
+    
 
     <main class= "container-main">
 
-        <div class="">
+        <div class="banner">
+
         <img src="./img/img-home-banner.jpg" alt="banner" class="banner-img">
         </div>
-        
     </main>
+
 
     <footer id=fondofooter>
         <div class="elementos-del-footer">
