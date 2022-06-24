@@ -13,8 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel= "stylesheet" href="css/normalize.css">
-    <link rel= "stylesheet" href="css/style.css" /> 
+    <link rel= "stylesheet" href="css/normalize.css" type="text/css">
+    <link rel= "stylesheet" href="css/style.css" type="text/css"/> 
+    <link rel= "stylesheet" href="CSS/normalize.css" type="text/css">
+    <link rel= "stylesheet" href="CSS/style.css" type="text/css"/> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
@@ -28,17 +30,19 @@
             </a>
         </div>
       <!-- input search-->
-      <form class="search-bar" autocomplete="on" method="get">
+     
+      <form class="search-form" autocomplete="on" method="get">
         <div class="search">        
           <input class="search-bar" type="search" placeholder="Buscar productos, marcas"/>
           <button class="button-bar-search" type="submit">
-            <i class="fas fa-search fa-lg"></i> 
+            <i class="fas fa-search"></i> 
           </button>            
         </div>  
-      </form>            
+      </form>  
+           
       <!-- Menu -->
       <div>                 
-        <nav class="main-nav">
+        
             <div id="toggle-menu" class="toggle-menu">
               <img src="/img/icons8-menu-squared-50.png" alt=""/>
             </div>
@@ -56,14 +60,17 @@
 
                 <ul id="main-menu" class="derecha-nav">
                 <li class="main-menu__item">
-                  <a href="#" class="main-menu__link">Creá tu cuenta<i class="far fa-address-card" style="color:black"></i></a></li>
+                  <i class="far fa-address-card" style="color:black"></i>
+                  <a href="crear-cuenta" class="main-menu__link">Creá tu cuenta</a></li>
                 <li class="main-menu__item">
-                  <a href="#" class="main-menu__link">Ingresá<i class="fas fa-sign-in-alt" style="color:black" ></i></a></li>
+                  <i class="fas fa-sign-in-alt" style="color:black" ></i>
+                  <a href="#" class="main-menu__link">Ingresá</a></li>
                 <li class="main-menu__item">
-                  <a href="#" class="main-menu__link">Mis Compras<i class="fas fa-shopping-basket" style="color:black"></i></a></li>
+                  <i class="fas fa-shopping-basket" style="color:black"></i>
+                  <a href="#" class="main-menu__link">Mis Compras</a></li>
                 </ul> 
             </div> 
-        </nav> 
+        
       </div> 
       <!-- fin Menu hamburguesa-->     
      </div> 
@@ -72,7 +79,7 @@
 
     <main class= "container-main">
 
-        <div class="">
+        <div class="banner">
 
         <img src="./img/img-home-banner.jpg" alt="banner" class="banner-img">
         </div>
@@ -80,7 +87,7 @@
         <p class="titulos-principales">Basado en tu última visita</p>
 
         <div class="card-container" >
-        
+       
             <div class="card">
               <div>
               <img src="./img/img-cafetera-moulinex.jpg" alt="cafetera moulinex" class="card-img-top" >
@@ -92,28 +99,28 @@
                  
                 <p class="card-text">$ 6.770</p>
                 <p class="card-desc">40% Off</p>
-                <span><h5 class="card-title">Cafetera Moulinex</h5></span>
+                <h5 class="card-title">Cafetera Moulinex</h5>
             </div> 
-        </div>      
+          </div>      
                        
   
-        <div class="card">
+          <div class="card">
               <div>
               <img src="./img/img-macbook-pro-2019.jpg" alt="macbook" class="card-img-top">
-            </div>
-            <div class="circulo">
+              </div>
+              <div class="circulo">
               <i class="fas fa-truck-moving" style="color: #39b54a"></i>
-            </div>
-                <div class="card-body">               
+              </div>
+              <div class="card-body">               
                 
                 <p class="card-text">$ 6.770</p>
                 <p class="card-desc">40% Off</p>
                 <h5 class="card-title">Macbook Pro-2019</h5>
               </div>
 
-        </div>
+          </div>
 
-        <div class="card">
+          <div class="card">
             <div>
             <img src="./img/img-samsung-galaxy-s10.jpg" alt="samsung-galaxy" class="card-img-top" >
             </div>
@@ -127,7 +134,7 @@
               <p class="card-desc">40% Off</p>
               <h5 class="card-title">Samsung Galaxy s10</h5>
             </div>
-        </div>
+           </div>
 
            
 
@@ -154,10 +161,8 @@
         <p class="titulos-principales">Sección Ofertas</p>  
         
         <div class="card-container" >
-      
-           
         
-        <div class="card">
+          <div class="card">
             <div>
             <img src="./img/img-samsung-galaxy-s10.jpg" alt="samsung-galaxy" class="card-img-top" >
             </div>
@@ -232,23 +237,27 @@
    
       <footer id=fondofooter>
         <div class="elementos-del-footer">
+
         <div class= "element-footer">
             <i class="far fa-credit-card" ></i> 
             <h2 class=titulares>Pagá con tarjeta o efectivo</h2>           
             <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!<p>
-        </div>
-       
+            </div>
+
+            <div style="border-right:2px solid rgb(169, 168, 168);height:120px; margin-top: 110px;"></div>
+        
         <div class= "element-footer">
             <i class="fas fa-user-shield" ></i>
             <h2 class=titulares>Seguridad de principio a fin</h2>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.<p>
         </div>
+
+        <div style="border-right:2px solid rgb(169, 168, 168);height:120px; margin-top: 110px;"></div>
       
-        
         <div class= "element-footer">
             <i class="fas fa-gift" ></i>
             <h2 class=titulares>Envío gratis desde $2500</h2>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.<p>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos.Es un beneficio de Mercado Puntos.<p>
         </div>
      
 
